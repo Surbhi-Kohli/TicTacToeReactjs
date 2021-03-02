@@ -1,7 +1,19 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  display:flex;
+  margin:10px;
 }
-
+.Game{
+ 
+  flex-direction:column;
+  justify-content:center;
+}
+.HistoryInfo{
+  margin:auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +47,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.board {
+  margin: auto;
+  display: flex;
+  width: 31em;
+  height: 30em;
+  flex-wrap: wrap;
+}
+.cell {
+  width: 10em;
+  height: 10em;
+  cursor:pointer;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filled{
+  cursor:not-allowed;
+}
+.segment{
+  background-color: bisque;
+  border:1px solid black;
+  margin-bottom:5px;
+  padding:4px;
+  cursor:pointer;
 }
